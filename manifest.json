@@ -1,0 +1,17 @@
+{
+    "name":"Bulk_Tiktok",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "action":{
+        "default_title": "Click to view a popup",
+        "default_popup":"index.html",
+        "default_icon":"logo.png"
+    },
+    "permissions":["activeTab","scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://music.yandex.ru/;"
+    }
+}
